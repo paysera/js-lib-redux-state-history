@@ -1,0 +1,61 @@
+{
+  "name": "@paysera/error-message-resolver",
+  "version": "1.0.0",
+  "description": "A simple library that provides means to save Redux state and revert it when needed",
+  "main": "dist/main.js",
+  "scripts": {
+    "build": "webpack --mode production --config webpack.config.js",
+    "lint": "eslint src/",
+    "test": "jest --config jest.config.js",
+    "test:watch": "jest --config jest.config.js --watchAll",
+    "test:coverage": "jest --config jest.config.js --no-cache --coverage",
+    "prepublishOnly": "rimraf dist && npm run build"
+  },
+  "files": [
+    "package.json",
+    "README.md",
+    "dist",
+    "src"
+  ],
+  "keywords": [
+    "paysera",
+    "redux",
+    "state",
+    "history"
+  ],
+  "homepage": "https://github.com/paysera/js-lib-redux-state-history#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/paysera/js-lib-redux-state-history"
+  },
+  "bugs": {
+    "url": "https://github.com/paysera/js-lib-redux-state-history/issues"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "author": "Paysera",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "^7.3.4",
+    "@babel/plugin-transform-runtime": "^7.3.4",
+    "@babel/preset-env": "^7.3.4",
+    "@paysera/eslint-config": "^1.0.0",
+    "babel-jest": "^24.1.0",
+    "babel-loader": "^8.0.5",
+    "coveralls": "^3.0.3",
+    "eslint": "^5.3.0",
+    "eslint-plugin-import": "^2.16.0",
+    "eslint-plugin-jsx-a11y": "^6.2.1",
+    "eslint-plugin-react": "^7.12.4",
+    "jest": "^24.1.0",
+    "jest-each": "^24.9.0",
+    "rimraf": "^2.6.3",
+    "webpack": "^4.29.6",
+    "webpack-cli": "^3.2.3",
+    "webpack-node-externals": "^1.7.2"
+  },
+  "dependencies": {
+    "redux-actions": "^2.6.5"
+  }
+}
