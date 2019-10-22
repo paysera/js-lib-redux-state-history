@@ -1,7 +1,7 @@
 import each from 'jest-each';
 import { revert } from '../../reducers';
 import HistoryLockError from '../../error/HistoryLockError';
-import InvalidArgumentError from '../../error/InvalidArgumentError';
+import EmptyHistoryError from '../../error/EmptyHistoryError';
 
 describe('@paysera/redux-state-history revert', () => {
     each([
@@ -63,7 +63,7 @@ describe('@paysera/redux-state-history revert', () => {
             },
         };
 
-        expect(() => revert(state)).toThrow(InvalidArgumentError);
+        expect(() => revert(state)).toThrow(EmptyHistoryError);
     });
 
     it('test revert reducer throws error if reverting locked state history', () => {

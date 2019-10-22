@@ -1,12 +1,12 @@
 import HistoryLockError from '../error/HistoryLockError';
-import InvalidArgumentError from '../error/InvalidArgumentError';
+import EmptyHistoryError from '../error/EmptyHistoryError';
 
 export default ({ history: { isLocked, states, ...remainingHistory } }) => {
     if (isLocked) {
         throw new HistoryLockError('Cannot revert state, because state history is locked');
     }
     if (states.length === 0) {
-        throw new InvalidArgumentError('Cannot revert state, bacause state history is empty');
+        throw new EmptyHistoryError('Cannot revert state, bacause state history is empty');
     }
 
     const lastState = states.pop();
