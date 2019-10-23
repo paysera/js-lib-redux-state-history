@@ -1,4 +1,4 @@
-# @paysera/js-lib-redux-state-history
+# @paysera/js-lib-redux-state-history [![Travis CI](https://api.travis-ci.org/paysera/js-lib-redux-state-history.svg?branch=master)](https://api.travis-ci.org/paysera/js-lib-redux-state-history.svg?branch=master) [![Coverage Status](https://coveralls.io/repos/github/paysera/js-lib-redux-state-history/badge.svg?branch=master)](https://coveralls.io/github/paysera/js-lib-redux-state-history?branch=master) 
 
 A simple library that provides means to save Redux state and revert it when needed.
 
@@ -17,7 +17,7 @@ import barReducer from './bar';
 import bazReducer from './baz';
 
 const config = {
-    maxHistoryLenght: 10,
+    maxHistoryLength: 10,
 };
 
 const reducers = {
