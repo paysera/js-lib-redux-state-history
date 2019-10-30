@@ -5,6 +5,8 @@ import {
     revert,
     saveAndLock,
     revertAndUnlock,
+    lock,
+    unlock,
 } from './actions';
 
 export default withHistory;
@@ -16,4 +18,6 @@ export {
     revert,
     saveAndLock,
     revertAndUnlock,
+    lock,
+    unlock,
 };

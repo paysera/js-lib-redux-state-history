@@ -4,12 +4,16 @@ import {
     revert,
     saveAndLock,
     revertAndUnlock,
+    lock,
+    unlock,
 } from './reducers';
 import {
     SAVE,
     REVERT,
     SAVE_AND_LOCK,
     REVERT_AND_UNLOCK,
+    LOCK,
+    UNLOCK,
 } from './constants/actionTypes';
 import isStateInitialized from './service/isStateInitialized';
 
@@ -32,6 +36,12 @@ export default (reducer, rawConfig = {}) => (state, action, ...rest) => {
     }
     if (actionType === REVERT_AND_UNLOCK) {
         return revertAndUnlock(initializedState);
+    }
+    if (actionType === LOCK) {
+        return lock(initializedState);
+    }
+    if (actionType === UNLOCK) {
+        return unlock(initializedState);
     }
 
     return reducer(initializedState, action, ...rest);
