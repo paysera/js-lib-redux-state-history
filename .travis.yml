@@ -14,7 +14,7 @@ deploy:
     secure: oGHFa1BhLzv1UBu7SdcRVrWrcUtUmANNOz2PcO+gTwRs/UV6l1G0b9v1BgRxRmxILVN75PKwY/n/e/HwNIOfJV6vfYf0I1rPcbxNig+mq8ndsHG9PvZK5q1yNH33ZpDaH8R+FuQDqJaantRwwOzjRYbaz55VPCU4BwoKz1gbHud14pbBA03qA2XMk8GEM48OTvgoET9cVrU4NXhwIdfZWB7YVaHOc3APzkuhFu9bTzfyVj2+IWI7Fg2yzh/vs0ZOEGZ6l9tYZ7xove2FbPcWhS+kVpFvY99I6AAKlH61UzD38b/LtjJ4ticyMl8fMUT8GZFFQZbQrJciDkEVIxXSLQKpPnWHxF0vYd2zV4Sz1r6e1Xo1bIpEdh7rouL+PXENbyufdp1oMMEwOMqvoUmvU5EDLdbE5l8hPmFi0E4cq7utamuvbMlZY815XroSC4pGTH5ilks15pgQ4PSXv6tQYlXuC4igpV3j0oXAsnh0qtwhYlnptxouK5Wo8xneHV6xxmg+Dhu8GuqRGIa6/Qa0OOBmkB4/Ekyh/8PCgdukPejRmEaGDrTqkrn8cVAEauEoQjV2JeCtHJ09nB0ggrOMV4Z6m1p/LLDmjXmzJJqGLGYu8RpwN9TQA5n0Y6nzsINd2+SjqXPyZB6nLIir3wuHQTxmfi96P3mgquhz5Yhm4Ro=
   on:
     tags: true
-    repo: paysera/js-lib-redux-state-history
+    repo: paysera/redux-state-history
     condition: "$RELEASE = true"
   skip_cleanup: true
 
