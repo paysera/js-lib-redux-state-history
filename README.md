@@ -1,16 +1,16 @@
-# @paysera/js-lib-redux-state-history [![Travis CI](https://api.travis-ci.org/paysera/js-lib-redux-state-history.svg?branch=master)](https://api.travis-ci.org/paysera/js-lib-redux-state-history.svg?branch=master) [![Coverage Status](https://coveralls.io/repos/github/paysera/js-lib-redux-state-history/badge.svg?branch=master)](https://coveralls.io/github/paysera/js-lib-redux-state-history?branch=master) 
+# @paysera/redux-state-history [![Travis CI](https://api.travis-ci.org/paysera/js-lib-redux-state-history.svg?branch=master)](https://api.travis-ci.org/paysera/js-lib-redux-state-history.svg?branch=master) [![Coverage Status](https://coveralls.io/repos/github/paysera/js-lib-redux-state-history/badge.svg?branch=master)](https://coveralls.io/github/paysera/js-lib-redux-state-history?branch=master) 
 
 A simple library that provides means to save Redux state and revert it when needed.
 
 ## Installation
 
-1. Require the package via package manager: `npm i @paysera/js-lib-redux-state-history`
+1. Require the package via package manager: `npm i @paysera/redux-state-history`
 
 2. Simply import the `withHistory` higher-order reducer and wrap your reducer with it. You may as well provide configuration
 as a second argument.
 
 ```js
-import { withHistory } from '@paysera/js-lib-redux-state-history';
+import { withHistory } from '@paysera/redux-state-history';
 import { combineReducers } from 'redux';
 import fooReducer from './foo';
 import barReducer from './bar';
@@ -38,7 +38,7 @@ export default combineReducers(reducers);
 Saves current branch into history.
 
 ```js
-import { save } from '@paysera/js-lib-redux-state-history';
+import { save } from '@paysera/redux-state-history';
 import fooAction from './fooAction';
 
 function fooBar(payload) {
@@ -56,7 +56,7 @@ ___
 Reverts state a step back.
 
 ```js
-import { save, revert } from '@paysera/js-lib-redux-state-history';
+import { save, revert } from '@paysera/redux-state-history';
 import fooAction from './fooAction';
 
 function fooBar(payload) {
@@ -76,7 +76,7 @@ ___
 Saves and locks the history state, so you cannot save or revert it without unlocking.
 
 ```js
-import { saveAndLock, revert } from '@paysera/js-lib-redux-state-history';
+import { saveAndLock, revert } from '@paysera/redux-state-history';
 import fooAction from './fooAction';
 
 function fooBar(payload) {
@@ -102,7 +102,7 @@ ___
 Reverts and unlocks the history state.
 
 ```js
-import { saveAndLock, revertAndUnlock } from '@paysera/js-lib-redux-state-history';
+import { saveAndLock, revertAndUnlock } from '@paysera/redux-state-history';
 import fooAction from './fooAction';
 
 function fooBar(payload) {
@@ -135,7 +135,7 @@ your user).
 
 If you wanted to dispatch inside a reducer, you could do something like this:
 ```js
-import { dispatchAction, revert } from '@paysera/js-lib-redux-state-history';
+import { dispatchAction, revert } from '@paysera/redux-state-history';
 import store from './store';
 
 export default (state, payload) => {
