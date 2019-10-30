@@ -1,6 +1,6 @@
 {
   "name": "@paysera/redux-state-history",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "A simple library that provides means to save Redux state and revert it when needed",
   "main": "dist/main.js",
   "scripts": {
