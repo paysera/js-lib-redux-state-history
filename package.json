@@ -52,7 +52,7 @@
     "jest-each": "^24.9.0",
     "rimraf": "^3.0.0",
     "webpack": "^4.29.6",
-    "webpack-cli": "^3.2.3",
+    "webpack-cli": "^4.0.0",
     "webpack-node-externals": "^1.7.2"
   },
   "dependencies": {
